@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "crownpeak agent",
   "main": "dist/crownpeakagent.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/crownpeakagent.d.ts",
   "scripts": {
     "prepublish": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
