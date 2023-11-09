@@ -1,6 +1,6 @@
 {
   "name": "crownpeakagent",
-  "version": "2.0.3",
+  "version": "2.0.5",
   "description": "crownpeak agent",
   "type": "module",
   "main": "./dist/cjs/main.js",
@@ -10,7 +10,7 @@
     "build:mjs": "npx tsc -p tsconfig.mjs.json",
     "build:pack": "npm pack",
     "build": "npm-run-all --sequential build:mjs build:cjs  build:pack",
-    "prepublish": "build"
+    "prepublish": "npx tsc -p tsconfig.cjs.json && npx tsc -p tsconfig.mjs.json && npm pack"
   },
   "repository": {
     "type": "git",
