@@ -9,7 +9,8 @@
     "build:cjs": "npx tsc -p tsconfig.cjs.json",
     "build:mjs": "npx tsc -p tsconfig.mjs.json",
     "build:pack": "npm pack",
-    "prepublish": "build:mjs && build:cjs && build:pack"
+    "build": "npm-run-all --sequential build:mjs build:cjs  build:pack",
+    "prepublish": "build"
   },
   "repository": {
     "type": "git",
